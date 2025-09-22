@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  tg-reminder-bot:
+    build: .
+    container_name: tg-reminder-bot
+    restart: always
+    env_file:
+      - .env
